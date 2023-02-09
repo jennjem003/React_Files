@@ -25,5 +25,5 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-# React Project01 : 시계 만들기
-+ https://bit.ly/3wtj67k
+# React Project06 : 부산 명소 과제
++ https://reactfiles-ec36a.web.app
