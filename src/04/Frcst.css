@@ -1,0 +1,69 @@
+.header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: darkseagreen;
+    color: azure;
+}
+
+.main{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: top;
+}
+
+.mainbox1{
+    width: 30vw;
+    flex-direction: column;
+}
+
+.mainbox1, .mainbox2{
+    height: 90vh;
+    display: flex;
+    justify-content: top;
+    align-items: top;
+    margin-top: 20px;
+}
+.mainbox2{
+    width: 60vw;
+    display: flex;
+    justify-content: center;
+}
+
+.dtdiv1{
+    display: flex;
+    width: 30vw;
+    height: 8vh;
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+.dtdiv1:hover, .dtdiv1:active{
+    background-color:cornsilk;
+    color: cadetblue;
+    font-size: 20px;
+}
+
+.detail{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid lightslategray;
+    background-color:peachpuff;
+    padding: 10px;
+
+}
+
+.lired{
+    color: red;
+    
+}

@@ -1,0 +1,73 @@
+.bheader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 10vh;
+    background-color:darkslategrey;
+    color: white;
+}
+
+h1{
+    font-size: 5vh;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: top;   
+    align-items: center;
+    width: 100vw;
+    height: 90vh;
+}
+
+.rowDiv, .rowDiv0{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: antiquewhite;
+    width: 60vw;
+    height: 7vh;
+    border-bottom: 1px solid darkgray;
+}
+
+.col {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#colrank{
+    width: 10%;
+}
+#colmovieNm{
+    width: 60%;
+}
+#colsalesAmt{
+    width: 20%;
+}
+#colrankInten{
+    width: 10%;
+}
+
+.spup {
+    color: brown;
+}
+.spdown{
+    color: blue;
+}
+
+.rowDiv:hover, .rowDiv:active{
+    background-color:cornsilk;
+}
+
+.rowDay{
+    width: 60vw;
+    height: 6vh;
+    padding: 10px;
+    background-color: lightgray;
+    color: aliceblue;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}

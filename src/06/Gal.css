@@ -1,0 +1,117 @@
+
+.content {
+    width: 100vw;
+    height: 100vh; /*100들 전체화면 쓰기*/
+    flex-direction: row;
+    height: auto;
+    display: flex;  
+    justify-content: center;
+    align-items: top;/*display~전체화면에서 중앙~탑에 두겠다*/
+    flex-direction: column;
+
+}
+.content>form{
+    width: 50vw;
+    height: 5vw;
+    flex-direction: top;
+    display: flex;  
+    justify-content: center;
+    align-items: top;
+}
+
+/*
+.content > ul {
+    width: 80%
+    display: flex;  
+    justify-content: left;
+    align-items: top;
+
+    list-style: none;
+    border: 2px solid black;
+}
+
+.content li{
+    width: 100%
+    display: flex;  
+    justify-content: left;
+    align-items: top;
+
+    list-style: none;
+    border: 2px solid black;
+}
+
+.conright{
+    width: 100%
+    display: flex;  
+    justify-content: left;
+    align-items: top;
+    border: 2px solid black;
+    margin : 10px
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/
+.c1, .card{   
+    flex-direction: column;
+    height: auto;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    margin: 10px;    
+}
+
+.c12 {
+    flex-direction: column;
+    height: auto;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    margin: 10px;  
+    width: 80%;
+    height: 80vh;
+}
+.c1{
+    width: 80%;
+    height: 80vh;
+    border: 2px solid black;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+.card{
+    width: 500px;
+    height: 400px;
+    background-color:royalblue;
+    color: azure;
+    border-radius: 20px;
+}
+
+.card li{
+    list-style: none;
+}
+
+.card img{
+    width: 350px;
+    height: 210px;
+}
+
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}

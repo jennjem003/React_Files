@@ -1,0 +1,73 @@
+.content{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: darkseagreen;
+    color: azure;
+}
+
+.main {
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: top;
+    border: 2px solid black;
+}
+
+.mydiv1{
+    width: 30vw;
+    height: 90vh;
+    background-color:mintcream;
+}
+
+
+.mydiv2{
+    width: 70vw;
+    height: 90vh;
+    background-color: rgb(252, 225, 176);
+}
+
+.mydiv1,.mydiv2{
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    align-items: center;
+}
+
+.mydiv11,.mydiv21{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px darkgray solid;
+}
+
+.mydiv11>p,.mydiv21>p {
+    color: darkcyan;
+}
+
+.divbt{
+    margin-top: 10px;
+}
+
+.divbt>button, .divbt>span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}

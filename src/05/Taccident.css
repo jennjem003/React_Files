@@ -1,0 +1,83 @@
+.header{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: darkseagreen;
+    color: azure;
+}
+
+.tmain{
+    width: 100vw;
+    height: 90vh;
+    display: flex;
+    justify-content: top;
+    align-items: top;
+}
+
+.tc1, .tc2, .content{
+    flex-direction: column;
+    height: auto;
+    display: flex;  
+    justify-content: top;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;    
+}
+.tc1{width: 30vw;}
+.tc2{width: 30vw;}
+.content{width: 40vw;}
+
+.c2con, .tcard, .tcardsel {
+    border: 1px solid gray;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.tcard:hover, .tcard::after, .c2con:hover, .c2con::after, .tcardsel{
+    background-color:cornsilk;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+ul > li{
+    display: flex;
+    margin: 2px;
+}
+.sp1, .sp11, .sp2, .sp21{
+    display: inline-flex;
+    width: 35%;
+    height: 40px;
+    font-size: 0.8em;
+    justify-content: center;
+    align-items: center;
+    background-color: cornsilk;
+    color: darkgrey;
+}
+.sp11 {
+    background-color: brown ;
+}
+
+.sp2, .sp21{
+    width: 70%;
+    justify-content: left;
+    align-items: center;
+    background-color: white;
+    color: black;
+    margin-left: 20px;
+    font-size: 1em;
+}
+
+
