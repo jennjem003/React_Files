@@ -7,8 +7,11 @@ import './App.css';
 //import Gal from './06/Gal';
 //import Mycom from './07/Mycom'
 //import Myform from './08/Myform';
-import Gal from './06/GalSelect';
-import GalSelect from './06/GalSelect';
+//import Gal from './06/GalSelect';
+//import GalSelect from './06/GalSelect';
+
+import RouteMain from './09/RouteMain';
+import { BrowserRouter } from 'react-router-dom';
 
 const App = () => {
     return (
@@ -19,7 +22,12 @@ const App = () => {
         //<Box/>
         //<Mycom/>
         //<Myform/>
-        <GalSelect/>
+        //<GalSelect/>
+
+        <BrowserRouter>
+        <RouteMain/>
+        </BrowserRouter>
+
     );
   }
 

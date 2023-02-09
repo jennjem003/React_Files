@@ -64,9 +64,11 @@ const GalSelect = () => {
         console.log(selR.current)
     }, [])
 
-    const handleSel = () => {
+    const handleSel = (e) => {
         //console.log("onChange",selR.current.value);
         //필터로 뽑아 낼 것이다
+        e.preventDefault();
+        if (selR.current.value === " ") return; // 선택을 클릭했을때 아무 실행 되지 않게 
         let temp = items.filter((item) => item.galTitle === selR.current.value);
         console.log("onchange temp",temp)
         setSelItem(temp[0])
@@ -79,9 +81,10 @@ const GalSelect = () => {
             {/*itemTag*/}
             {/* <Galcard2 selData = {item}/> */}
             <form>
-                <select ref={selR} name='sel1' onChange={handleSel}>
+                <select ref={selR} name='sel1' onChange={handleSel} >{/*셀렉 안에 onClick={handleSel} 을 넣으면 맨 처음 광안리 뜬것을 눌렀을때에 값이 뜬다 */}
                     {/* <option value="1">옵션1</option>
                     <option value="2">옵션2</option> */}
+                    <option value=" "> 🌊선택🌊 </option>
                     {optionTag}
                 </select>
             </form>
