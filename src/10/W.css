@@ -1,0 +1,72 @@
+.content {
+    width: 100vw;
+    height: 100vh; /*100들 전체화면 쓰기*/
+    flex-direction: row;
+    height: auto;
+    display: flex;  
+    justify-content: center;
+    align-items: top;/*display~전체화면에서 중앙~탑에 두겠다*/
+    flex-direction: column;
+
+}
+
+.wh{
+    width: 420px;
+    height: 80px;
+    background-color: cadetblue;
+    color: white;
+    flex-direction: top;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+}
+
+.menu1, .menu2{
+    flex-direction: column;
+    height: 150px;
+    width: 300px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px;
+    font-size: 25px; 
+}
+.menu1:hover, .menu1:after, .menu2:hover, .menu2:after{
+    background-color:  honeydew;
+    color: darkgreen;
+}
+
+.w2div{
+    width: 420px;
+    height: 50px;;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    border-bottom:  1px solid lightslategray;
+}
+
+.sp0, .sp1, .sp2{
+    justify-content: center;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    font-size: 1em;
+
+}
+.sp0{
+    width: 30%;
+    justify-content: right;
+    color: gray;
+    font-weight: bold;
+}
+.sp1{
+    width: 20%;
+    justify-content: center;
+}
+.sp2{
+    width: 20%;
+    justify-content: left;
+}

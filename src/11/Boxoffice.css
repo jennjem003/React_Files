@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.mvh{
+    width: 100vw;
+    height: 80px;
+
+    background-color: darkcyan;
+    color: beige;
+
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+
+}
+.mvh > h1, .mvh > form {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mvh > h1 {
+    width: 70%;
+    align-items: center;
+}
+.mvh > form {
+    width: 30%;
+    align-items: left;
+}
+.mvh input{
+    width: 150px;
+    display: inline-flex;
+    justify-content: left;
+    align-items: left;
+}
+
+input{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.mvcontent{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+}
+
+.mvlist, .mvrow{
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+}
+
+.mvcol0,.mvcol1,.mvcol2{
+    width: 100%;
+    height: 7vh;
+    border-bottom: 1px solid darkgray;
+    display: inline-flex;
+    border: 1px solid black;
+}
+.mvcol0{
+    
+}
+
+.mvcol3,.mvcol4,.mvcol5{
+    border-bottom: 2px solid black;
+    font-weight: bold;
+}
+.mvcol3{
+    width: 30%;
+}
+.mvcol4{
+    width: 40%;
+}
+.mvcol5{
+    width: 30%;
+}
+
+
+
+

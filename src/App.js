@@ -10,8 +10,12 @@ import './App.css';
 //import Gal from './06/GalSelect';
 //import GalSelect from './06/GalSelect';
 
-import RouteMain from './09/RouteMain';
+// import RouteMain from './09/RouteMain';
 import { BrowserRouter } from 'react-router-dom';
+
+//import Wmain from './10/Wmain'
+import Async from './11/Async';
+import Boxoffice from './11/Boxoffice';
 
 const App = () => {
     return (
@@ -24,9 +28,12 @@ const App = () => {
         //<Myform/>
         //<GalSelect/>
 
-        <BrowserRouter>
-        <RouteMain/>
-        </BrowserRouter>
+        // <BrowserRouter>
+        // {/* <RouteMain/> */}
+        // <Wmain/>
+        // </BrowserRouter>
+        //<Async/>
+        <Boxoffice/>
 
     );
   }
