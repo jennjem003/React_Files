@@ -58,7 +58,7 @@ const BoxofficeList = ({tDt}) => {
             <div>
                 {/* {tDt && mvlist} */}
             </div>
-            <div className="">
+            <div className="mvdetail">
                 {mvcd && <BoxofficeDetail mvcd={mvcd}/>}
             </div>
             

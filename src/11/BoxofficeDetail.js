@@ -2,12 +2,12 @@ import { useState, useEffect } from "react"
 
 const BoxofficeDetail = ({ mvcd }) => {
 
-    const [mTag, setmTag] = useState();
+    const [mTag, setMTag] = useState();
 
     console.log(mvcd)
 
     const getdata = async () => {
-        let url = 'http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${mvcd}';
+        let url = 'http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieInfo.json?key=f5eef3421c602c6cb7ea224104795888&';
         url = url + `movieCd=${mvcd}`
 
         try {
@@ -18,52 +18,50 @@ const BoxofficeDetail = ({ mvcd }) => {
             //object
             let temp = data.movieInfoResult.movieInfo;
             const showitem = {
-                'movieNm': '영화명',
-                'openDt': '개봉일',
-                'prdtStatNm': '제작상태',
-                'typeNm': '영화형태',
-                'directors': '감독'
+                "영화명" : "movieNm",
+                "개봉일" : "openDt" ,
+                "제작상태" : "prdtStatNm",
+                "영화구분" : "typeNm",
+                "감독" : "directors"
             }
             if (mvcd) {
-                let tag = [];
-                for (let [k, v] of Object.entries(showitem)) {
-                    if (k === 'directors') {
+                let tag = [] 
+                for(let [k, v] of Object.entries(showitem)) {
+                    if ( k === "감독") {
                         tag.push(<div className="dtdiv" key={k}>
-                            <span className="dtsp1">{k}</span>
+                            <span className="dtsp1">{k} :</span>
                             <span className="dtsp2">{temp[v][0].peopleNm}</span>
                         </div>)
                     }
-                    if (k === 'directors') {
-                        t = t + <li>{v}{temp[k][0].peopleNm}</li>
-                    }
                     else {
-                        t = t + <li>{v}{temp[k]}</li>
+                        tag.push(<div className="dtdiv" key={k}>
+                            <span className="dtsp1">{k} :</span>
+                            <span className="dtsp2">{temp[v]}</span>
+                        </div>)
                     }
-                }
-                let ttag =
-                    <div>
-                        <span>영화명</span>
-                        <span>{temp.movieNm}</span>
-                    </div>
-                ttag =
-
-                    console.log(temp)
+                    //console.log("tag", k, selmv[v])
+                };
+                setMTag(tag);
             }
         }
-        catch (err) {
-
+        catch(err) {
+            console.log(err)
         }
-
+        
     }
 
-    useEffect(() => {
+    useEffect(() =>{
         getdata();
-    }, [mvcd])
+        console.log("mvcd", mvcd)
+    }, [mvcd]);
 
     return (
         <>
-            {mvcd && mTag}
+   
+        {mvcd && mTag}
+  
         </>
     )
 }
-export default BoxofficeDetail
+
+export default BoxofficeDetail;
