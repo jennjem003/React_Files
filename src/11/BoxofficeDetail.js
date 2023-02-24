@@ -7,7 +7,7 @@ const BoxofficeDetail = ({ mvcd }) => {
     console.log(mvcd)
 
     const getdata = async () => {
-        let url = 'http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieInfo.json?key=f5eef3421c602c6cb7ea224104795888&';
+        let url = 'https://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieInfo.json?key=f5eef3421c602c6cb7ea224104795888&';
         url = url + `movieCd=${mvcd}`
 
         try {

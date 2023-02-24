@@ -16,7 +16,7 @@ const BoxofficeList = ({tDt}) => {
     useEffect(()=>{
         if(!tDt) return;
         const apikey = 'f5eef3421c602c6cb7ea224104795888';
-        let url = `http://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${apikey}&targetDt=${tDt}`;
+        let url = `https://kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.json?key=${apikey}&targetDt=${tDt}`;
         //console.log(url)
         //이렇게 쓰기도 한다
         //url = url + `key=${apikey}&`;
